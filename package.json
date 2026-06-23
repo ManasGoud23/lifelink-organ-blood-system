@@ -1,0 +1,16 @@
+{
+  "name": "venu-organ-donation-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "seed": "node server/seed.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.13"
+  }
+}

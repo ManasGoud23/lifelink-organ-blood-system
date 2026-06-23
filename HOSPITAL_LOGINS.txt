@@ -1,0 +1,26 @@
+HOSPITAL LOGIN DIRECTORY
+ALL PASSWORDS: hospital123
+
+1. City Hospital (Test)             | Phone: 9988776655 | Loc: Hyderabad
+2. Apollo hospital 1 Hyderabad      | Phone: 9154782036 | Loc: Hyderabad
+3. Care hospital 2 Karimnagar       | Phone: 9854712039 | Loc: Karimnagar
+4. Yashoda hospital 3 Warangal      | Phone: 9354012038 | Loc: Warangal
+5. NIMS hospital 4 Nizamabad        | Phone: 9254812037 | Loc: Nizamabad
+6. Sunshine hospital 5 Secunderabad | Phone: 9454112036 | Loc: Secunderabad
+7. Global hospital 6 Rangareddy     | Phone: 9554212035 | Loc: Rangareddy
+8. KIMS hospital 7 Medak            | Phone: 9654312034 | Loc: Medak
+9. Medicover hospital 8 Siddipet    | Phone: 9754412033 | Loc: Siddipet
+10. Rainbow hospital 9 Hyderabad    | Phone: 9854512032 | Loc: Hyderabad
+11. Continental hospital 10 Karimnagar| Phone: 9954612031 | Loc: Karimnagar
+12. MaxCure hospital 11 Warangal    | Phone: 9054712030 | Loc: Warangal
+13. Omni hospital 12 Nizamabad      | Phone: 9154812029 | Loc: Nizamabad
+14. Star hospital 13 Secunderabad   | Phone: 9254912028 | Loc: Secunderabad
+15. Lotus hospital 14 Rangareddy    | Phone: 9354012027 | Loc: Rangareddy
+16. Image hospital 15 Medak         | Phone: 9454112026 | Loc: Medak
+17. Life hospital 16 Siddipet       | Phone: 9554212025 | Loc: Siddipet
+18. Apollo hospital 17 Hyderabad    | Phone: 9654312024 | Loc: Hyderabad
+19. Care hospital 18 Karimnagar     | Phone: 9754412023 | Loc: Karimnagar
+20. Yashoda hospital 19 Warangal    | Phone: 9854512022 | Loc: Warangal
+
+... and 35 more available in the database.
+Check SEEDED_HOSPITALS.txt for more.

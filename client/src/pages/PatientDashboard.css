@@ -1,0 +1,333 @@
+.patient-dashboard {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: var(--bg-primary);
+}
+
+.patient-dashboard .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.patient-dashboard h1 {
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.search-section,
+.requests-section {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid #f1f3f5;
+}
+
+.search-section h2,
+.requests-section h2 {
+  color: var(--accent-danger);
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-group select,
+.form-group input {
+  padding: 12px;
+  border: 1px solid #e9ecef;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  background-color: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-danger);
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+  background-color: #fff;
+}
+
+.search-form button {
+  padding: 14px;
+  background: var(--accent-danger);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
+}
+
+.search-form button:hover:not(:disabled) {
+  background: var(--accent-danger-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px rgba(255, 107, 107, 0.3);
+}
+
+.search-form button:disabled {
+  background: #dee2e6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.results {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #f1f3f5;
+}
+
+.results h3 {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.no-results {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
+}
+
+.donors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.donor-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #f1f3f5;
+  border-left: 4px solid var(--accent-danger);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease;
+}
+
+.donor-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.donor-item h4 {
+  margin: 0 0 10px 0;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.donor-item p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.request-btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--accent-danger);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+}
+
+.request-btn:hover {
+  background: var(--accent-danger-hover);
+}
+
+.no-requests {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px 20px;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #f1f3f5;
+  border-left: 4px solid var(--accent-danger);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.request-header h4 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pending {
+  background: var(--accent-warning);
+  color: #fff;
+}
+
+.status-approved {
+  background: var(--accent-success);
+}
+
+.status-rejected {
+  background: var(--accent-danger);
+}
+
+.request-card p {
+  margin: 8px 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.date {
+  color: #adb5bd;
+  font-size: 12px !important;
+  margin-top: 15px !important;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-dashboard h1 {
+    font-size: 24px;
+  }
+
+  .donors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f3f5;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pay-btn {
+  background-color: var(--accent-success);
+  color: white;
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.pay-btn:hover {
+  background-color: var(--accent-success-hover);
+}
+
+.cancel-btn {
+  background-color: var(--accent-danger);
+  color: white;
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: var(--accent-danger-hover);
+}
+
+.pay-now-btn {
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.pay-now-btn:hover {
+  background-color: var(--accent-primary-hover);
+}

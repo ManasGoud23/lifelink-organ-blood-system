@@ -1,0 +1,37 @@
+USE THESE ACCOUNTS FOR TESTING:
+
+--- ADMIN ---
+Phone: 9111111111
+Password: admin123
+
+--- PATIENT ---
+Phone: 9876543210
+Password: password123
+
+--- SAMPLE HOSPITALS (From 55 Seeded) ---
+(Check the terminal or database for others, here are some examples)
+Note: Passwords for all hospitals are: hospital123
+
+Example 1:
+Name: Apollo hospital 1 Hyderabad
+Location: Hyderabad
+Phone: [Run the app and look at Partner Hospitals section]
+
+Example 2:
+Name: Care hospital 2 Karimnagar
+Location: Karimnagar
+
+Example 3:
+Name: Yashoda hospital 3 Warangal
+Location: Warangal
+
+Example 4:
+Name: NIMS hospital 4 Nizamabad
+Location: Nizamabad
+
+SEARCH LOGIC:
+- If you search "Hyderabad", you will see up to 4 hospitals from Hyderabad.
+- If fewer than 4 are found, it will show hospitals from other locations to fill the list.
+---
+Total Hospitals Created: 55
+Locations used: Hyderabad, Karimnagar, Warangal, Nizamabad, Secunderabad, Rangareddy, Medak, Siddipet.

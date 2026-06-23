@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+my-node-app/node_modules/
+my-node-app-1/node_modules/
+
+# Local databases
+*.sqlite
+server/database.sqlite
+
+# Environment variables
+.env
+.env.local
+server/.env
+
+# Build outputs
+build/
+dist/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+.venv/
